@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="with=device- width, initial-scale=1.0" />
+    <title>HUD-HUD Travel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+    <script src="https://kit.fontawesome.com/6596afc3d7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul class="nobull">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="whoami.html">SIAPA SAYA?</a></li>
+            <li><a href="places.html">TEMPAT REKOMENDASI</a></li>
+            <li><a href="contactme.html">HUBUNGI SAYA!</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Selamat Datang Di Web Travel Saya</h1>
+        <p>Saya Nazmi,Saya Adalah Pemandu Travel Anda</p>
+        <a href="https://wa.me/+6281233392004" class="hero-btn">Hubungi Saya Jika Tertarik</a>
+      </div>
+    </section>
+    <!---------Main Page Bottom-------->
+
+    <section class="mainpage-bottom">
+      <h1>Travel Guide</h1>
+
+      <div class="little-box">
+        <div class="box-col">
+          <img src="images/endulus-turu-450x253.png" />
+          <h3>Haruskah Tur Anda Dilakukan Sendiri atau Dengan Tur?</h3>
+          <p>
+            With Andalusia and beaches in the south, Barcelona in the north, Madrid and other cities in the central regions, Spain is an extremely rich country in terms of tourism. Ibiza and its other beaches and historical cities offer
+            travelers a wide...
+          </p>
+        </div>
+        <div class="box-col">
+          <img src="images/vizesiz-balkan-turu-450x253.png" />
+          <h3>Tur Bisa Bebas Visa Haruskah Dilakukan Sendirian atau Dengan Tur?</h3>
+          <p>
+            Would you like to go to a different land in the heart of Europe, but very different from Western and Northern Europe, very similar to Turkey and Turkish culture on one side, but on the other hand? If your answer is yes, in the
+            world...
+          </p>
+        </div>
+        <div class="box-col">
+          <img src="images/ispanya-gezilecek-yerler-450x254.png" />
+          <h3>15 Tempat Terindah Untuk Dikunjungi Di Spanyol!</h3>
+          <p>
+            Inspiring artists such as Salvador Dali, Picasso, Gaudi and Eduardo Chillida, Spain is completely painting. How would you like to take a look at the cities waiting for you in Spain, where picturesque images are intertwined with
+            a deep-rooted history?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!---------Testimonials-------->
+
+    <section class="testimonials">
+      <h1>Apa Kata Pengunjung Terakhir?</h1>
+
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="images/1.jpg" />
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis cum sapiente unde sequi ad id molestiae commodi. Corporis, libero voluptatem! Eos, porro. Et maxime nam aperiam voluptates velit fuga.</p>
+            <h3>Sendi Ahmad</h3>
+          </div>
+        </div>
+
+        <div class="testimonial-col">
+          <img src="images/sendi.jpeg" />
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dicta! Id quae, culpa repellat eius sed temporibus distinctio! Excepturi vel dolorem cupiditate pariatur ullam culpa illo architecto dolorum eligendi quo.
+            </p>
+            <h3>Muhammad Ilham</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------Footer-------->
+    <section class="footer">
+      <h4></h4>
+      <p>A fantastic traveler.</p>
+      <div class="icons">
+        <a href="https://www.facebook.com" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+
+        <a href="https://instagram.com/nzmii.ms?igshid=NTc4MTIwNjQ2YQ==" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+
+        <a href="https://www.twitter.com/marezist" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+
+        <a href="https://www.linkedin.com/denizkanat" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p>Made by <i class="fa fa-heart-o"></i></p>
+    </section>
+
+    <!----------JavaScript------->
+    <script>
+      var navLinks = document.getElementById('navLinks');
+
+      function showMenu() {
+        navLinks.style.right = '0';
+      }
+      function hideMenu() {
+        navLinks.style.right = '-200px';
+      }
+    </script>
+  </body>
+</html>

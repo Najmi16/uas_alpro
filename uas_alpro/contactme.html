@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="with=device- width, initial-scale=1.0" />
+    <title>Hubungi Saya !</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+    <script src="https://kit.fontawesome.com/6596afc3d7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="con-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul class="nobull">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="whoami.html">SIAPA SAYA?</a></li>
+            <li><a href="places.html">TEMPAT REKOMENDASI</a></li>
+            <li><a href="contactme.html">HUBUNGI SAYA!</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>HUBUNGI SAYA!</h1>
+    </section>
+
+    <section class="contact-me">
+      <div class="row">
+        <div class="contact-col"></div>
+      </div>
+      <div class="contact-col">
+        <form action="form-handler.php" method="post">
+          <input type="text" name="Name" placeholder="Enter Your Name" required />
+          <input type="email" name="email" placeholder="Enter Your Email" required />
+          <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+          <button type="sumbit" class="hero-btn red-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!---------Footer-------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />umque harum autem laboriosam. Officiis accusantium, tempora dolore placeat maiores expedita cum odio! Similique molestias assumenda magnam autem?</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made by <i class="fa fa-heart-o"></i></p>
+    </section>
+
+    <!----------JavaScript------->
+    <script>
+      var navLinks = document.getElementById('navLinks');
+
+      function showMenu() {
+        navLinks.style.right = '0';
+      }
+      function hideMenu() {
+        navLinks.style.right = '-200px';
+      }
+    </script>
+  </body>
+</html>
